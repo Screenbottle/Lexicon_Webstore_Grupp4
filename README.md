@@ -16,6 +16,7 @@ Detta projekt är en e-handelsbutik byggd med Next.js, TypeScript och Tailwind C
 - [Användning](#användning)
 - [Bidra](#bidra)
 - [Lärdomar](#lärdomar)
+- [Reflektion](#reflektion)
 - [Licens](#licens)
 
 ## Funktionalitet
@@ -183,6 +184,23 @@ Contributions are welcome! Please submit a pull request with your proposed chang
 - Externa ramverk som Clerk och Stripe
 - Bestämma när ett projekt är klart/när man ska vara nöjd
 - Mer utförligt användande av Github Projects, Issues, Pull Requests, kodgranskning
+
+
+## Reflektion
+
+### Mitt bidrag till projektet
+Mina ansvarsområden var:
+- Att sätta upp den dynamiska /products/[id]-routen. För att hämta data om produkten används search params och en fetch i Server Components.
+- Skapa komponenten som visar viss produktinformation i sökresultaten och länkar till produktens sida.
+- Att implementera en fungerande varukorg med biblioteket **[use-shopping-cart](https://useshoppingcart.com/)**.
+- Integrering med Stripe för checkout.
+- Autentisering med Clerk för kontroll av åtkomst till admin-routen
+
+### Utvecklingsmöjligheter
+- Förbättra checkout genom att implementera en form för input av bland annat adressinformation samt att skicka ett bekräftelsemail vid lyckad betalning.
+- Förbättra säkerheten för admin-routen, den borde inte använda samma inloggningssystem som butiken.
+- Lägga till mer funktionalitet för inloggade användare, t.ex personliga erbjudanden.
+- Möjlighet att sätta upp en REA-kampanj, t.ex ge rabatt på alla varor av ett visst märke.
 
 ## Licens
 
